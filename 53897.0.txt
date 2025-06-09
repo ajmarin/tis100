@@ -1,0 +1,53 @@
+@0
+## MIN INST
+
+@1
+MOV UP DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP ACC
+MOV ACC DOWN
+L: SUB 1
+   MOV ACC DOWN
+   JNZ L
+
+@6
+
+
+@7
+
+
+@8
+# X COORD
+MOV UP RIGHT
+L: MOV ACC RIGHT
+   SAV
+   MOV UP ACC
+   JEZ R
+   SWP
+   JMP L
+
+R: SWP
+   ADD 1
+
+@9
+MOV LEFT ACC
+NEG
+L: MOV LEFT DOWN
+   ADD 18
+   MOV ACC DOWN
+   MOV 3 DOWN
+   MOV -1 DOWN
+   SUB 17
+   JNZ L
+
+@10

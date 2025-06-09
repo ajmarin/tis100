@@ -1,0 +1,52 @@
+@0
+## BEAST
+
+@1
+MOV UP DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP ACC
+MOV ACC RIGHT
+L: SUB 1
+   MOV ACC DOWN
+   JNZ L
+
+@6
+MOV LEFT ACC
+NEG
+L: ADD 18
+   MOV ACC DOWN
+   SUB 17
+   JNZ L
+
+@7
+
+
+@8
+# X COORD
+L: MOV ACC RIGHT
+   SAV
+   MOV UP ACC
+   JEZ R
+   SWP
+   JMP L
+
+R: SWP
+   ADD 1
+
+@9
+MOV LEFT DOWN
+MOV UP DOWN
+MOV 3 DOWN
+MOV -1 DOWN
+
+@10

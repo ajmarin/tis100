@@ -1,0 +1,57 @@
+@0
+## INST+NODE MIN
+
+@1
+MOV UP DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+S: MOV UP ACC
+   JEZ F
+   MOV 1 DOWN
+   MOV 1 RIGHT
+   MOV ACC DOWN
+   MOV ACC RIGHT
+   MOV ACC DOWN
+   MOV ACC RIGHT
+   JMP S
+F: MOV 7 DOWN
+   MOV 7 RIGHT
+
+@6
+L: JRO LEFT
+   SUB LEFT
+   JLZ U
+   ADD LEFT
+   JMP L
+U: MOV LEFT ACC
+   JMP L
+MOV ACC DOWN
+SUB ACC
+
+@7
+
+
+@8
+MOV 500 ACC
+L: JRO UP
+   SUB UP
+   JGZ U
+   ADD UP
+   JMP L
+U: MOV UP ACC
+   JMP L
+MOV ACC DOWN
+
+@9
+MOV UP DOWN
+
+@10

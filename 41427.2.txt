@@ -1,0 +1,61 @@
+@0
+## BEAST
+
+@1
+MOV UP ACC
+MOV ACC DOWN
+MOV ACC RIGHT
+
+@2
+S: MOV LEFT ACC
+   JEZ F
+   MOV 1 DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   JMP S
+F: MOV 7 DOWN
+
+@3
+
+
+@4
+
+
+@5
+S: MOV UP ACC
+   JEZ F
+   MOV 1 DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   JMP S
+F: MOV 7 DOWN
+
+@6
+L: JRO UP
+   SUB UP
+   JLZ U
+   ADD UP
+   JMP L
+U: MOV UP ACC
+   JMP L
+MOV ACC DOWN
+SUB ACC
+
+@7
+
+
+@8
+MOV 500 ACC
+L: JRO UP
+   SUB UP
+   JGZ U
+   ADD UP
+   JMP L
+U: MOV UP ACC
+   JMP L
+MOV ACC DOWN
+
+@9
+MOV UP DOWN
+
+@10
