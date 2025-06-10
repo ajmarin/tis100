@@ -1,0 +1,66 @@
+@0
+
+
+@1
+R: MOV UP ACC
+MOV UP RIGHT
+NEG
+S: SWP
+   MOV RIGHT ACC
+   JEZ R
+   SWP
+   JEZ O
+   ADD 1
+   JGZ O
+   MOV 1 RIGHT
+   JMP S
+O: MOV 3 RIGHT
+   JMP S
+
+@2
+MOV LEFT RIGHT
+L: MOV UP ACC
+   MOV ACC LEFT
+   MOV ACC RIGHT
+   JEZ R
+   JRO LEFT
+   MOV RIGHT NIL
+   JMP L
+   JRO RIGHT
+   MOV ACC DOWN
+   JMP L
+R: MOV 0 DOWN
+
+@3
+R: MOV LEFT ACC
+ADD 1
+L: SWP
+   MOV LEFT ACC
+   JEZ R
+   SWP
+   SUB 1
+   JLZ S
+   MOV 1 LEFT
+   JMP L
+S: MOV 2 LEFT
+   JMP L
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+
+@10
