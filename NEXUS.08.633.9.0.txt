@@ -1,0 +1,83 @@
+@0
+MOV RIGHT DOWN
+
+@1
+MOV UP LEFT
+
+@2
+
+
+@3
+MOV UP DOWN
+MOV UP ACC
+L: SUB 100
+   JLZ F
+   SWP
+   ADD 1
+   SWP
+   JMP L
+F: ADD 100
+   MOV ACC RIGHT
+   SWP
+   MOV ACC DOWN
+   MOV 0 ACC
+   SWP
+
+@4
+MOV LEFT ACC
+L: SUB 10
+   JLZ F
+   SWP
+   ADD 1
+   SWP
+   JMP L
+F: ADD 10
+   MOV ACC RIGHT
+   SWP
+   MOV ACC DOWN
+   MOV 0 ACC
+   SWP
+
+@5
+MOV LEFT DOWN
+
+@6
+
+
+@7
+MOV UP ACC
+L: SUB 100
+   JLZ F
+   SWP
+   ADD 1
+   SWP
+   JMP L
+F: ADD 100
+   MOV ACC RIGHT
+   SWP
+   MOV ACC DOWN
+   MOV 0 ACC
+   SWP
+MOV UP DOWN
+
+@8
+MOV LEFT ACC
+L: SUB 10
+   JLZ F
+   SWP
+   ADD 1
+   SWP
+   JMP L
+F: ADD 10
+   MOV ACC RIGHT
+   SWP
+   MOV ACC DOWN
+   MOV 0 ACC
+   SWP
+MOV UP DOWN
+
+@9
+MOV LEFT DOWN
+MOV UP DOWN
+
+@10
